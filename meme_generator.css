@@ -1,0 +1,136 @@
+ body {
+     margin: 0px;
+ }
+ 
+ #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+ }
+ 
+ #heading-container {
+    background-color: black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+ }
+ 
+ .heading-text {
+    color: white;
+    font-family: 'Calistoga', 'sans-serif';
+    text-shadow: 2px 2px 8px #c75656;
+    font-size: 48px;
+ }
+
+ #meme-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ #meme-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+ }
+
+ .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0;
+ }
+
+ .input {
+    width: 90%;
+    text-align: center;
+    height: 25px;
+    border-radius: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 16px;
+ }
+
+ #submit-button {
+    width: 90%;
+    background-color: #cf4242;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 20px;
+    color: white;
+    height: 35px;
+ }
+ 
+ .submit-button {
+     width: 60%;
+     text-align: center;
+ }
+
+ .meme {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.meme-image-container:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.meme-image-container:hover .meme-text {
+    opacity: 0.1;
+}
+
+.meme-image-container:hover #remove-text {
+    opacity: 1;
+}
+
+#remove-text {
+    opacity: 0; 
+    font-size: 350px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: black 1px 1px 2px ;
+    color: white;
+    pointer-events: none;
+}
+
+.meme-image-container {
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+.meme-image {
+    width: 400px;
+    height: 400px;
+}
+
+.meme-text {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 44px;
+    text-transform: upperCase;
+    text-shadow: 2px 2px 1px black;
+    position: absolute;
+    width: 400px;
+    overflow-wrap: normal; 
+    }
+
+#top-text {
+    top: 3%
+}
+
+#bottom-text {
+    bottom: 3%
+}

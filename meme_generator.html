@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nicholai Hansen Meme Generator </title>
+        <link rel="stylesheet" href="meme_generator.css">
+        <script type="text/javascript" src="meme_generator.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Calistoga|Montserrat:300|Teko:600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id='container'>
+            <div id='heading-container'>
+                <h3 class='heading-text'>HELO, FREIND, DO U LIK MEMES?</h3>
+                <h4 class='heading-text' id='create'>Create your own with the form below.</h4>
+            </div>
+
+            <form method="get" id="meme-form">
+                <div class='inputs'>
+                    <div class='input'>
+                        <label for="meme-image"></label>
+                        <input type="text" class='input' id="meme-image" placeholder="Copy/Paste Image Link">
+                    </div>
+                    <div class='input'>
+                        <label for="top-text"></label>
+                        <input type="text" class='input' id='top-text' placeholder="Text on Top">
+                    </div>
+                    <div class='input'>
+                        <label for="bottom-text"></label>
+                        <input type="text" class='input' id='bottom-text' placeholder="Text on Bottom">
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="submit-button">Create Meme</button>
+                    <input type="submit" style="display: none"/>
+                </div>
+            </form>
+        </div>
+
+        <div id="meme-field">
+
+        </div>
+    </body>
